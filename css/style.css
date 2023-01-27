@@ -1,0 +1,286 @@
+
+
+
+
+/* ---css-root-variable--- */
+:root{
+    --fs-base:16px;
+    --fs-large:2rem;
+    --white:#fff;
+    --black:#000;
+    --light-blue:#9295ad;
+    --violet:#692cc2;
+    --blue:#9396ae;
+    --light-balck:#29282d;
+    --fs-ex-large:50px;
+    --fs-medium:35px;
+
+
+    
+}
+
+@font-face {
+    font-family: light-font;
+    src: url("../roobert/HCLTechRoobert-Light.woff")
+  }
+
+  @font-face {
+    font-family: regular;
+    src: url("../roobert/HCLTechRoobert-Light.woff");
+  }
+
+  @font-face{
+    font-family: blod-regular;
+    src: url("../roobert/HCLTechRoobert-Heavy.woff2")
+  }
+
+  @font-face{
+    font-family: medium;
+    src: url("../roobert/HCLTechRoobert-Medium.woff")
+  }
+
+/* base declaration */
+
+
+body,
+html,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roobert', sans-serif;
+
+}
+
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* ----global-class---- */
+
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.flex-justify-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.flex-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.light-font{
+    font-family: light-font;
+    font-size: 16px;
+}
+
+.regular-font{
+    font-family: regular;
+    font-size: var(--fs-ex-large);
+    letter-spacing: 1.2;
+    font-weight: 400;
+}
+
+.fs-medium{
+    font-family: medium;
+    font-size: var(--fs-medium);
+}
+
+span{
+    font-family: blod-regular;
+    
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* ----nav--- */
+
+.navbar-row-section{
+    padding: 20px 0px;
+}
+
+.navbar-row-section ul li{
+    padding: 10px 10px;
+}
+
+.navbar-row-section ul li a{
+    padding: 10px 10px;
+    font-weight: 500 ;
+    transition: all 0.5s ease-in;
+}
+
+.navbar-row-section ul li a:hover{
+    color: var(--light-blue);
+}
+
+.nav-button{
+    padding: 10px 12px;
+    background: var(--light-balck);
+    color: var(--white);
+    outline: none;
+    transition: all 0.2s ease-in;
+}
+
+.nav-button:hover{
+    background-color: var(--white);
+    color: var(--black);
+    
+}
+
+
+
+/* ----banner--- */
+
+.banner{
+    background: url('../imgs/banner\ 3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner-wallpaper-wrapper{
+    min-height: 800px;
+    display: flex;
+    justify-content: start;
+
+}
+
+.banner-content h1{
+    color: var(--white);
+}
+
+
+/* ---product section--- */
+
+.content-padding{
+    padding: 100px 0px;
+
+}
+
+.product-section-left h2{
+    padding-bottom: 50px;
+}
+
+
+.product-section-left img{
+    padding-bottom: 20px;
+}
+
+.product-section-left p{
+    color: #9295ad;
+    font-family: light-font;
+
+}
+
+
+.content-product{
+    display: flex;
+    /* align-items: center; */
+    justify-content: start;
+    flex-direction: column;
+    padding: 10px 0px;
+    font-family: light-font;
+    
+    
+}
+
+.content-product a h3{
+    color: var(--violet);
+    padding-bottom: 9px;
+    font-size: 20px;
+    
+
+}
+
+.vertical-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-product p{
+    color: var(--blue);
+    text-align: left;
+    font-size: 15px;
+    font-family: regular;
+}
+
+.content-product{
+    padding: 17px 16px;
+    padding-right: 25px;
+    border: 1px solid rgb(205, 199, 199);
+    margin-left: 20px;
+    margin-top: 0;
+    min-width: 300px;
+    min-height: 140px;
+   
+    
+}
+
+
+
+
+
+
+.content-product{
+    box-shadow: 0 16px 9px -18px var(--blue);
+    font-family: blod-regular;
+}
+
+.content-product:hover{
+    background-color: var(--violet);
+    transition: all 0.5s ease-in;
+}
+
+.content-product:hover a h3{
+    color: var(--white);
+    
+}
+
+.content-product:hover p{
+    color: var(--white);
+    
+}
+
+.flex-justify{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-section-right{
+    padding-left: 30px;
+}
+
